@@ -6,10 +6,16 @@ data "aws_vpc" "default" {
   default = true
 }
 
+resource "tls_private_key" "demo" {
+  algorithm = "RSA"
+  rsa_bits  = 2048
+}
+
 resource "aws_key_pair" "demo_key" {
   key_name   = var.key_pair_name
-  public_key = file(var.public_key_path)
+  public_key = tls_private_key.demo.public_key_openssh
 }
+
 
 resource "aws_security_group" "demo_sg" {
   name        = "terraform-demo-sg"
