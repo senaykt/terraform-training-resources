@@ -28,6 +28,8 @@ terraform apply
 
 Confirm with `yes` when prompted.
 
+terraform output -raw private_key_pem > terraform-demo-key.pem
+
 ## 3. SSH Access
 
 After apply completes, use the output IP:
