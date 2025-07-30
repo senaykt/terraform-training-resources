@@ -1,6 +1,6 @@
 # Terraform Demo – Setup and Usage Guide
 
-This project demonstrates how to use Terraform to provision a basic AWS S3 bucket. Follow the instructions below to prepare your environment and execute the Terraform scripts.
+This project demonstrates how to use Terraform. Follow the instructions below to prepare your environment and execute the Terraform scripts.
 
 ---
 
@@ -71,10 +71,6 @@ Confirm the apply step with `yes` when prompted.
 
 ---
 
-## Notes
-
-- The S3 bucket name must be globally unique. If you see a `bucket already exists` error, try changing the bucket name in `terraform.tfvars`.
-- To remove all created resources:
 
 ```bash
 terraform destroy
