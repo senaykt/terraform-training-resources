@@ -4,14 +4,6 @@ This project demonstrates how to use Terraform. Follow the instructions below to
 
 ---
 
-## Requirements
-
-- Ubuntu-based Linux server
-- AWS account with IAM user and access keys
-- Billing enabled in AWS
-
----
-
 ## 1. Install Terraform
 
 ```bash
