@@ -1,0 +1,5 @@
+aws_region      = "eu-west-2"
+ami_id          = "ami-09b42976632b27e9b"
+instance_type   = "t2.micro"
+key_pair_name   = "terraform-demo-key"
+public_key_path = "id_rsa.pub"
